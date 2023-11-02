@@ -19,7 +19,7 @@ public class Personne {
     }
 
     public void afficheNomPrenom() {
-        System.out.println(this.nom.toUpperCase()+" "+this.prenom.toUpperCase());
+        System.out.println(this.nom.toUpperCase()+" "+this.prenom);
     }
     public void setNom(String nom) {
         this.nom = nom;
@@ -36,7 +36,6 @@ public class Personne {
     public String getPrenom() {
         return prenom;
     }
-
     public AdressePostale getAdressePostale() {
         return adressePostale;
     }
