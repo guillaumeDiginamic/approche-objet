@@ -23,7 +23,7 @@ public class TestPersonne {
         String nom = "Dupont";
         String prenom = "Paul";
         Personne personne1 = new Personne(nom,prenom);
-        personne1.adressePostale= adr1;
+        personne1.setAdressePostale(adr1);
 
 
         //personne 2
@@ -31,9 +31,9 @@ public class TestPersonne {
         prenom = "Pierre";
         Personne personne2 = new Personne(nom,prenom,adr2);
 
-        System.out.println("Personne1 :"+personne1.nom+" "+personne1.prenom);
+        personne1.afficheNomPrenom();
         System.out.println("Personne1 :"+personne1.adressePostale.numeroRue+" "+personne1.adressePostale.libelleRue+" "+personne1.adressePostale.codePostal+" " +personne1.adressePostale.ville);
-        System.out.println("Personne2 :"+personne2.nom+" "+personne2.prenom);
+        personne2.afficheNomPrenom();
         System.out.println("Personne2 :"+personne2.adressePostale.numeroRue+" "+personne2.adressePostale.libelleRue+" "+personne2.adressePostale.codePostal+" " +personne2.adressePostale.ville);
 
     }
