@@ -9,6 +9,11 @@ public class Compte {
         this.solde = solde;
     }
 
+    @Override
+    public String toString() {
+        return "Numéro de compte = "+numero+" Solde = "+ solde;
+    }
+
     public int getNumero() {
         return numero;
     }
